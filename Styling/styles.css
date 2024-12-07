@@ -13,6 +13,11 @@
     font-family: "Rubik", sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /* HEADER */
 
@@ -178,6 +183,8 @@ nav .menu li a:hover {
 
 
 /* NAV BAR RESPONSIVENESS USING MEDIA QUERRY */
+
+
 
 
 @media (max-width: 1400px) {
@@ -457,12 +464,12 @@ nav .menu li a:hover {
 }
 
 .sg-container > div {
-    width: 600px;
+    width: 500px;
     /* background-color: #45a049; */
 }
 
 .sg-container .sg-image img {
-    width: 600px;
+    width: 500px;
     display: block;
     margin: auto;
 }
@@ -483,12 +490,12 @@ nav .menu li a:hover {
 
 .sg-content h1 {
     font-size: 18px;
-    letter-spacing: 50px;
+    letter-spacing: 20px;
 }
 
 .sg-content p {
     text-align: justify;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 
