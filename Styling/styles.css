@@ -377,12 +377,9 @@ nav .menu li a:hover {
 
 
 
-
-
 /* STUDENTS CONTAINER */
 
 .students {
-    cursor: pointer;
     margin-bottom: 100px;
     padding: 20px;
     margin-top: 40%;
@@ -645,6 +642,13 @@ nav .menu li a:hover {
     color: #333;
 }
 
+.news-item:hover {
+    background-color: #f0f0f0; 
+    border-color: #bbb;       
+    transform: scale(1.02);   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
 
 
 
@@ -689,4 +693,76 @@ nav .menu li a:hover {
 
 
 
+/* FOOTER */
 
+.footer {
+    width: 100%;
+    height: auto;
+    background: url(/Images/footer-bg-yl.jpg);
+    border-top: 4px solid var(--primary-color);
+    margin-top: 150px;
+    justify-content: center;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-contents {
+    padding: 50px;
+}
+
+.footer-contents img {
+    width: 20rem;
+}
+
+.footer-contents p {
+    color: var(--primary-color);
+    font-size: 20px;
+    padding-top: 50px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.campuses {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer .copyright {
+    background-color: var(--primary-color);
+    padding: 20px;
+    color: white;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+
+
+@media (max-width: 835px) {
+    .footer-contents p {
+        font-size: 13px;
+    }
+
+    .footer-contents img {
+        width: 15rem;
+    }
+}
+
+
+
+@media (max-width: 535px) {
+    .footer-contents p {
+        display: none;
+    }
+
+    .footer-contents img {
+        width: 12rem;
+    }
+
+    .footer .copyright {
+        font-size: 8px;
+        padding: 10px;
+    }
+}
