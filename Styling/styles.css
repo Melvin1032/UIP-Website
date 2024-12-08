@@ -557,7 +557,7 @@ nav .menu li a:hover {
           }
 
           .sg-content h2, h1, p {
-            margin: 0 30px;
+            margin: 0 25px;
           }
 
           .sg-content h2 {
@@ -686,7 +686,102 @@ nav .menu li a:hover {
 
 
 
+/* ABOUT */
 
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(/Images/bg-wh.jpg);
+    padding: 100px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+   
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+/* About Section */
+
+
+.about-content {
+    display: flex;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+.abt-txt p {
+    padding:50px;
+    width: 40rem;
+    height: 30rem;
+    text-align: justify;
+    line-height: 1.6; 
+    margin: 0;      
+    color: #333;     
+    font-size: 16px;
+}
+
+.about-content .abt-img img{
+    width: 200px;
+}
+
+.about-content .abt-img {
+    padding:50px;
+    width: 20rem;
+    height: 30rem;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abt-txt p {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .about-content .abt-img {
+        width: 70%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .about-content .abt-img img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
 
 
 
@@ -723,7 +818,7 @@ nav .menu li a:hover {
     cursor: pointer;
 }
 
-.campuses {
+.campus {
     display: flex;
     text-align: center;
     justify-content: center;
