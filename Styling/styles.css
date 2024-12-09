@@ -113,6 +113,47 @@ nav a {
     color: var(--primary-color);
 }
 
+.menu .dropdown {
+    position: relative;
+}
+
+.menu .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 100;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.menu .dropdown-menu li {
+    padding: 1rem 1.5rem;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.menu .dropdown-menu li a {
+    color: var(--primary-color);
+    display: block;
+    text-decoration: none;
+}
+
+.menu .dropdown-menu li a:hover {
+    color: #dd3c3c;
+    background-color: #f9f9f9;
+}
+
+
 
 
 
@@ -128,26 +169,32 @@ nav .menu li a:hover {
 }
 
 /* ACTIVE NAV-BAR */
-
-.home .menu li:first-child a {
+.home .menu > li:first-child > a {
     border-bottom: 2px solid #800000;
 }
 
-.about .menu li:nth-child(2) a {
+.about .menu > li:nth-child(2) > a {
     border-bottom: 2px solid #800000;
 }
 
-.admissions .menu li:nth-child(3) a {
+.admissions .menu > li:nth-child(3) > a {
     border-bottom: 2px solid #800000;
 }
 
-.academics .menu li:nth-child(4) a {
+.academics .menu > li:nth-child(4) > a {
     border-bottom: 2px solid #800000;
 }
 
-.campuses .menu li:nth-child(5) a {
+.campuses .menu > li:nth-child(5) > a {
     border-bottom: 2px solid #800000;
 }
+
+/* Disable border-bottom for dropdown menu items */
+.menu .dropdown-menu a {
+    border-bottom: none !important;
+}
+
+
 
 /* SEARCHBAR */
 
@@ -896,7 +943,7 @@ nav .menu li a:hover {
 .admissions-content {
     width: 40rem;
     height: 72rem;
-    border: 2px solid #dddddd52;
+    border: 2px solid #dddddd68;
     padding: 40px;
 
 }
@@ -1197,6 +1244,230 @@ nav .menu li a:hover {
 }
 
 
+
+
+/* CAMPUSES */
+
+/* Campus Courses Section */
+.campuses-courses,
+.campuses-courses1 {
+    min-height: 50vh;
+    padding: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.name-campus {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Content Styles */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    width: 80%;
+}
+
+.program-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    width: 500px;
+}
+
+/* Courses Content */
+.courses-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.courses-title {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.program-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.program-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.program-link {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #862424;
+    padding: 10px 15px;
+    background: #f9f9f9;
+    border: 1px solid #862424;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.program-link:hover {
+    background-color: #862424;
+    color: #fff;
+}
+
+/* Program Category */
+.program-category {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('campuses/santamariaa.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.program-category h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Campus List */
+.campus-courses {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.campus {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.campus h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.campus ul {
+    list-style: none;
+}
+
+.campus ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.campus ul li ul {
+    list-style: disc;
+    margin-left: 20px;
+    color: #333;
+}
+
+.campus ul li ul li {
+    font-size: 0.95rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .program-category h2,
+    .campus-courses {
+        max-width: 95%;
+        padding: 20px;
+    }
+    .program-image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .program-category {
+        padding: 15px;
+        height: auto; /* Allow content to define height */
+    }
+
+    .program-category h2 {
+        font-size: 1.8rem;
+        text-align: center; /* Center-align text for small screens */
+    }
+
+    .campus-courses {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .campus h3 {
+        font-size: 1.3rem;
+    }
+
+    .campus ul li {
+        font-size: 0.95rem;
+    }
+    .program-image {
+        max-width: 90%; /* Make image responsive on smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .program-category {
+        padding: 10px;
+    }
+
+    .program-category h2 {
+        font-size: 1.5rem;
+    }
+
+    .campus-courses {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .campus {
+        padding: 10px;
+    }
+
+    .campus h3 {
+        font-size: 1.2rem;
+    }
+
+    .campus ul li {
+        font-size: 0.9rem;
+    }
+
+    .program-link {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
+
+    .program-image {
+        max-width: 100%; /* Full width on mobile */
+    }
+}
 
 
 
