@@ -799,6 +799,16 @@ nav .menu li a:hover {
     }
 }
 
+@media (max-width: 400px) {
+    .hero-content-about h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content-about p {
+        font-size: 0.5rem;
+    }
+}
+
 
 
 /* VISON-MISSION */
