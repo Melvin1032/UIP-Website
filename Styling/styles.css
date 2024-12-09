@@ -377,10 +377,12 @@ nav .menu li a:hover {
 
 
 
+
+
 /* STUDENTS CONTAINER */
 
 .students {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     padding: 20px;
     margin-top: 40%;
 }
@@ -462,7 +464,6 @@ nav .menu li a:hover {
 
 .sg-container > div {
     width: 500px;
-    /* background-color: #45a049; */
 }
 
 .sg-container .sg-image img {
@@ -472,7 +473,7 @@ nav .menu li a:hover {
 }
 
 .sg-content {
-    margin-top: 70px;
+    margin-top: 20px;
 }
 
 .sg-content h1, h2, h3{
@@ -696,14 +697,24 @@ nav .menu li a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url(/Images/bg-wh.jpg);
+    background: url(/Images/pages-bg.jpg);
     padding: 100px;
+   background-size: cover;
+   background-repeat: no-repeat; 
+}
+
+.hero-content-about {
+    background-color: rgba(255, 255, 255, 0.468); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .hero-content-about h1 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
-   
 }
 
 .hero-content-about p {
@@ -719,6 +730,7 @@ nav .menu li a:hover {
     text-align: center;
     gap: 10px;
     flex-wrap: wrap;
+   
 
 }
 
@@ -986,7 +998,7 @@ nav .menu li a:hover {
 @media (max-width: 995px) {
 
     .aside-elements {
-        width: 450px;
+        width: 250px;
     }
 
     
@@ -1075,6 +1087,104 @@ nav .menu li a:hover {
 /* ACADEMICS */
 
 
+.academic-main {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin: auto;
+}
+
+.academic-content {
+    width: 30rem;
+    height: auto;
+    border: 2px solid #dddddd52;
+    padding: 40px;
+
+}
+
+.academic-content2 {
+    width: 30rem;
+    height: auto;
+    border: 2px solid #dddddd52;
+    padding: 40px;
+}
+
+.academic-container {
+    border-radius: 8px;
+}
+
+.requirements-academic h2 {
+    font-size: 1.3rem;
+    color:var(--primary-color);
+    margin-bottom: 15px;
+    text-align: start;
+    border-bottom: 2px solid #541010;
+}
+
+.category-acad h3 {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+
+.programs-title{
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+
+.academics-programs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.academics-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.academics-image {
+    width: 500px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.academics-image-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.academics-image:hover {
+    transform: scale(1.05);
+}
+
+.academics-image:hover .academics-image-img {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .academics-image {
+        width: 300px;
+        height: 120px;
+    }
+}
 
 
 
