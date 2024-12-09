@@ -983,7 +983,13 @@ nav .menu li a:hover {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 995px) {
+
+    .aside-elements {
+        width: 450px;
+    }
+
+    
     .admissions-main {
         flex-direction: column; 
         align-items: center;
