@@ -33,25 +33,27 @@
         </div>
     <div class="toggle"><i class='bx bx-menu'></i></div>
     <ul class="menu">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">ABOUT UIP</a></li>
-      <li><a href="admissions.html">ADMISSIONS</a></li>
-      <li><a href="academics.html">ACADEMICS</a></li>
-      <li class="dropdown">
-          <a href="campuses.html">CAMPUSES <i class='bx bxs-chevron-down' style='color:#800000'></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="main-campus.html">Main Campus</a></li>
-            <li><a href="narvacan.html">Narvacan Campus</a></li>
-              <li><a href="sta.maria.html">Santa Maria Campus</a></li>
-              <li><a href="santiago.html">Santiago Campus</a></li>
-              <li><a href="candon.html">Candon Campus</a></li>
-              <li><a href="tagudin.html">Tagudin Campus</a></li>
-              <li><a href="cervantes.html">Cervantes Campus</a></li>
-          </ul>
-    <div class="searchbar">
-        <i class='bx bx-search-alt bx-tada' style='color:#800000'  ></i>
-        <input type="text" placeholder="Search..">
-    </div>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT UIP</a></li>
+        <li><a href="admissions.html">ADMISSIONS</a></li>
+        <li><a href="academics.html">ACADEMICS</a></li>
+        <li class="dropdown">
+            <a href="campuses.html">CAMPUSES <i class='bx bxs-chevron-down' style='color:#800000'></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="main-campus.html">Main Campus</a></li>
+              <li><a href="narvacan.html">Narvacan Campus</a></li>
+                <li><a href="sta.maria.html">Santa Maria Campus</a></li>
+                <li><a href="santiago.html">Santiago Campus</a></li>
+                <li><a href="candon.html">Candon Campus</a></li>
+                <li><a href="tagudin.html">Tagudin Campus</a></li>
+                <li><a href="cervantes.html">Cervantes Campus</a></li>
+            </ul>
+        </li>
+    </ul>
+          <div class="searchbar">
+            <button onclick="performSearch()"> <i class='bx bx-search-alt' style='color:#800000'></i></button>
+            <input type="text" id="searchInput" placeholder="Search..." />
+          </div>
 </nav>
 
 
@@ -61,6 +63,45 @@
         <div class="hero-content-main">
         </div>
     </header>
+
+
+
+    <div class="about-content">
+        <div class="abt-txt">
+            <p>        
+               <b> UIP Candon Campus headed by Dr. Filipinas M. Gasalao, Campus Administrator, joins the celebration of the 126th Philippine Independence Day at the Candon City Plaza.</b>
+                <br><br>
+                Also present in the said event are staff from the different government agencies in the City of Candon. They participated in the Flag Raising and Wreath-Laying Ceremonies at Plaza Wayawaya followed by the Kadiwa ng Pangulo Ribbon Cutting. It also coincides with the annual Kalayaan Job Fair as a program of the City Government of Candon in coordination with the Department of Labor and Employment.
+                <br><br>
+                Awarded as Best Organizational Unit during the 24th Charter Day Celebration, Employees Rewards and Recognition 2022 of the University of Ilocos Philippines
+            </p>
+        </div>
+        <div class="abt-img">
+            <img src="Images/cnd1.jpg" alt="">
+            <img src="Images/cnd3.jpg" alt="">
+        </div>
+    </div>
+  
+    
+
+    <div class="about-content">
+        <div class="abt-txt">
+            <h1>Brief History</h1>
+            <p>
+                Candon City Campus was formerly the Southern Ilocos Sur School of Fisheries (SISSOF) which evolved from a fishery demonstration farm (Ilocos Sur Marine Demonstration Farm). It is located in the coastal barangay of Darapidap, Candon City. With its integration into the UIP, it became the College of Commercial and Social Services. At present Candon City Campus houses the College of Business and Hospitality Management.
+            </p>
+        </div>
+        <div class="abt-img">
+            
+            <img src="Images/cnd4.jpg" alt="">
+            <img src="Images/cnd5.jpg" alt="">
+        </div>
+    </div>
+    </div>
+
+    <div class="acad-img">
+        <img src="Images/cnd-acad.jpg" alt="">
+      </div>
 
 
         <!-- FOOTER -->
@@ -87,7 +128,7 @@
     
     <script src="/JS/toggle.js"></script>
     <script src="/JS/active_nav.js"></script>
-
+    <script src="/JS/search.js"></script>
 
 
 </body>
