@@ -237,7 +237,7 @@ nav .menu li a:hover {
 @media (max-width: 1400px) {
     .menu {
         display: none; 
-        top: 6.5rem;
+        top: 6.3rem;
         right: 0;
         background-color: whitesmoke;
         flex-direction: column;
@@ -275,6 +275,7 @@ nav .menu li a:hover {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
          overflow: hidden;
     }
+
 }
 
 
@@ -1466,6 +1467,120 @@ nav .menu li a:hover {
 
     .program-image {
         max-width: 100%; /* Full width on mobile */
+    }
+}
+
+
+
+
+
+/* HERO FOR CAMPUSES */
+
+.hero-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(/Images/main.jpg);
+    padding: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15vh; 
+}
+
+.hero-stamaria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(/Images/sta-maria.jpg);
+    padding: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15vh; 
+}
+
+.hero-narvacan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(/Images/narvacan.jpg);
+    padding: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15vh; 
+}
+
+.hero-santiago {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(/Images/santiago.jpg);
+    padding: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15vh; 
+}
+
+.hero-candon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(/Images/candon.jpg);
+    padding: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15vh; 
+}
+
+.hero-tagudin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(/Images/tagudin.jpg);
+    padding: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15vh; 
+}
+
+.hero-cervantes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(/Images/cervantes.jpg);
+    padding: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15vh; 
+}
+
+
+@media (max-width: 768px) {
+    .hero-main, .hero-stamaria, .hero-narvacan, .hero-santiago, .hero-candon, .hero-tagudin, .hero-cervantes {
+        height: 10vh; /* Increase height for better visibility */
+        padding: 50px; /* Reduce padding for smaller screens */
+    }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+    .hero-main, .hero-stamaria, .hero-narvacan, .hero-santiago, .hero-candon, .hero-tagudin, .hero-cervantes {
+        height: 10vh; /* Further adjust height */
+        padding: 20px; /* Minimize padding for mobile */
+        background-position: center top; /* Adjust background position for smaller screens */
     }
 }
 
