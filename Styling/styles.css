@@ -133,6 +133,7 @@ nav a {
 
 .menu .dropdown:hover .dropdown-menu {
     display: block;
+    margin-top: 11px;
 }
 
 .menu .dropdown-menu li {
@@ -373,6 +374,18 @@ nav .menu li a:hover {
     .menu li {
         font-size: 12px;
     }
+
+    .menu .dropdown-menu li a {
+        display: none;
+    }
+
+    .menu .dropdown-menu {
+        display: none;
+        background-color: #ff000000;
+    }
+    
+
+    
 
 }
 
